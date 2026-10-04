@@ -1,0 +1,21 @@
+set relativenumber
+set nu
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+
+" for C files
+augroup c_settings
+	autocmd!
+	autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+augroup END
+
+" for .py files
+" Creating a doctring when I press <ctrl>+d
+autocmd FileType python inoremap <buffer> <C-d> '''<CR>'''<Esc>ko
+" have a more verbose docstring mapping that looks at what your parameters are
+" and generates the 'Parameters' and 'Returns' sections
+
+
