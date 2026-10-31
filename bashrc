@@ -141,3 +141,5 @@ esac
 
 alias gs='git status'
 alias gp='git push'
+alias gloga='git log --oneline --graph --all'
+alias gc='git commit'
